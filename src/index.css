@@ -1,0 +1,98 @@
+
+:root {
+  --primary: #D9B779;
+  --primary-light: #D9A689;
+  --bg-dark: #1C1716;
+  --bg-card: #28201E;
+  --text-main: #FFFFFF;
+  --text-muted: #D9C5B8;
+  --accent: #BF8275;
+  --accent-red: #D93B3B;
+  --accent-red-light: #F25C5C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'The Seasons', 'Cormorant Garamond', serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-pinyon {
+  font-family: 'Pinyon Script', cursive;
+  font-weight: 400;
+}
+
+.font-numbers {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+}
+
+.font-dancing {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+}
+
+.font-seasons {
+  font-family: 'The Seasons', 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+
+.app-container {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: var(--bg-dark);
+  min-height: 100vh;
+  box-shadow: 0 0 50px rgba(212, 175, 55, 0.05); /* very subtle gold glow on desktop */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: #000;
+  font-family: 'The Seasons', 'Cormorant Garamond', serif;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  font-size: 1rem;
+}
+
+.btn-gold:active {
+  transform: scale(0.95);
+}
+
+.text-gold {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--primary); /* fallback */
+}
