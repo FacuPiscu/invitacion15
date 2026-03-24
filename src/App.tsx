@@ -1,6 +1,7 @@
 import { Hero } from './components/Hero';
 import { AudioPlayer } from './components/AudioPlayer';
 import { Countdown } from './components/Countdown';
+import { Phrase } from './components/Phrase';
 import { Location } from './components/Location';
 import { DressCode } from './components/DressCode';
 import { RSVP } from './components/RSVP';
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <AudioPlayer />
       <Countdown />
+      <Phrase />
       <Location />
       <DressCode />
       <RSVP />

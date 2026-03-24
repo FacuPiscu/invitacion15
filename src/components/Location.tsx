@@ -52,7 +52,7 @@ export const Location = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', textAlign: 'left' }}>
             <MapPin className="text-gold" size={32} />
             <div>
-              <h3 className="font-dancing" style={{ fontSize: '1.8rem', marginBottom: '0.2rem', color: 'var(--primary-light)' }}>Salón de Eventos</h3>
+              <h3 className="font-dancing" style={{ fontSize: '1.8rem', marginBottom: '0.2rem', color: 'var(--primary-light)' }}>Salón el Cuadro</h3>
               <p className="font-seasons" style={{ fontSize: '1.2rem', color: 'var(--text-muted)' }}>Av. Manuel García Fernández 255<br/>Bella Vista, Tucumán</p>
             </div>
           </div>
