@@ -40,7 +40,7 @@ export const RSVP = () => {
         style={{ width: '100%', maxWidth: '400px' }}
       >
         <h2 className="font-pinyon text-gold" style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>Asistencia</h2>
-        <p className="font-seasons" style={{ color: 'var(--text-muted)', marginBottom: '2rem', fontSize: '1.2rem' }}>Por favor, confirmá tu asistencia antes del 15 de Diciembre.</p>
+        <p className="font-seasons" style={{ color: 'var(--text-muted)', marginBottom: '2rem', fontSize: '1.2rem' }}>Por favor, confirmá tu asistencia antes del 10 de Abril.</p>
 
         {status === 'success' ? (
           <div style={{ padding: '2rem', backgroundColor: 'rgba(74, 222, 128, 0.1)', border: '1px solid #4ade80', borderRadius: '15px' }}>
