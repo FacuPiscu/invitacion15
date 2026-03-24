@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 export const RSVP = () => {
   const [formData, setFormData] = useState({
     nombre: '',
-    asistencia: 'si'
+    asistencia: 'si',
+    mesa: ''
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
@@ -13,8 +14,17 @@ export const RSVP = () => {
     setStatus('loading');
     
     try {
-      // Simulate network request
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzo1Bc8D4ItnVAUpTmOj-VAbfumWa1Y9_-qL74px1QTdEusjOXoZ2I4C1rlF2cw_Ayz/exec';
+
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors', // Evita problemas de CORS con Google Scripts
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+      
       setStatus('success');
     } catch (error) {
       setStatus('error');
